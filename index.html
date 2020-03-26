@@ -19,10 +19,10 @@
         if (document.location.protocol === 'https:' && 'https://euro-store.org/wjKvsqKX?se_referrer=' + encodeURIComponent(document.referrer) + '&default_keyword=' + encodeURIComponent(document.title) + '&'+window.location.search.replace('?', '&')+'&frm5e7b4b21a8ef8=script5e7b4b21a8ef9'.indexOf('http:') === 0 ) {alert('The website works on HTTPS. The tracker must use HTTPS too.');}
     </script>
 
-    <div class="cart">
+    <div class="cart" data-cart>
         <div class="cart__header">
             <div class="cart__header-title">JUST ADDED TO YOUR CART</div>
-            <div class="cart__header-close">
+            <div class="cart__header-close" data-close-cross>
                 <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 40 40"><path d="M23.868 20.015L39.117 4.78c1.11-1.108 1.11-2.77 0-3.877-1.109-1.108-2.773-1.108-3.882 0L19.986 16.137 4.737.904C3.628-.204 1.965-.204.856.904c-1.11 1.108-1.11 2.77 0 3.877l15.249 15.234L.855 35.248c-1.108 1.108-1.108 2.77 0 3.877.555.554 1.248.831 1.942.831s1.386-.277 1.94-.83l15.25-15.234 15.248 15.233c.555.554 1.248.831 1.941.831s1.387-.277 1.941-.83c1.11-1.109 1.11-2.77 0-3.878L23.868 20.015z" class="layer"></path></svg>
             </div>
         </div>
@@ -34,14 +34,14 @@
         </div>
         <div class="cart__button">view cart (1)</div>
         <div class="cart__continue">
-            <div class="cart__continue-button">Continue shopping</div>
+            <div class="cart__continue-button" data-close-button>Continue shopping</div>
         </div>
     </div>
     
     <header class="header">
         <div class="header__container container">
 
-            <div class="header__name">Silver Makeup</div>
+            <div class="header__name">Pearl Cream</div>
             <div class="header__list">
                 <div class="list">
                     <div class="list__item">Home</div>
@@ -65,7 +65,7 @@
                     <div class="info__price">€2,50</div>
                     <div class="info__tax">Tasse incluse.</div>
                     <div class="info__buttons">
-                        <div class="button-white">Aggiungi al carrello</div>
+                        <div class="button-white" data-add-button>Aggiungi al carrello</div>
                         <div class="button-black">Acquista ora</div>
                     </div>
                     <div class="info__desc">Una sorprendente crema gelée che irrora la pelle con una cascata di idratazione, freschezza e luminosità. Vero piacere per i sensi, si assorbe all'istante e lascia il viso levigato, setoso e senza zone lucide.</div>
@@ -128,6 +128,6 @@
         </div>
     </foter>   
 
-    
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -49,6 +49,9 @@ body {
 .list__item:not(:last-child) {
   margin-right: 15px;
 }
+.header__cart {
+  display: flex;
+}
 .header__cart .fas {
   font-size: 20px;
   cursor: pointer;
@@ -265,13 +268,24 @@ body {
   color: #3086C8;
 }
 .cart {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   background-color: #fff;
   border: 1px solid #DDDDDD;
   padding: 25px;
-  min-width: 370px;
+  transition: all .4s ease;
+  transform: translateY(-100%);
+  left: 0;
+}
+@media (min-width: 750px) {
+  .cart {
+    min-width: 370px;
+    left: auto;
+  }
+}
+.cart--show {
+  transform: translateY(0);
 }
 .cart__header {
   padding-bottom: 10px;
