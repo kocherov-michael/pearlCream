@@ -264,3 +264,60 @@ body {
 .fa-cc-paypal {
   color: #3086C8;
 }
+.cart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #DDDDDD;
+  padding: 25px;
+  min-width: 370px;
+}
+.cart__header {
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #DDDDDD;
+  font-size: 14px;
+}
+.cart__header-close {
+  height: 100%;
+  width: 14px;
+}
+.cart__header-close svg {
+  max-width: 100%;
+  cursor: pointer;
+}
+.cart__goods {
+  display: flex;
+  padding-top: 15px;
+  font-weight: bold;
+}
+.cart__goods-img {
+  width: 60px;
+  margin-right: 20px;
+}
+.cart__goods-img img {
+  max-width: 100%;
+}
+.cart__button {
+  border: 1px solid #3a3a3a;
+  padding: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+.cart__continue {
+  text-align: center;
+  padding-top: 10px;
+}
+.cart__continue-button {
+  display: inline-block;
+  border-bottom: 1px solid #3a3a3a;
+  padding-bottom: 3px;
+  font-size: 12px;
+  cursor: pointer;
+}
